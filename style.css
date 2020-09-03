@@ -1,0 +1,47 @@
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .image {
+            /* The image used */
+            background-image: url("title.jpg");
+            /* Set a specific height */
+            height: 615px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .wrapper1 {
+            position: absolute;
+            top: 80%;
+            left: 70%;
+            transform: translate(-70%, -70%);
+            color: white;
+            font-family: cursive;
+        }
+
+        h4:before {
+            content: "I am Ramish Hassan";
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 2rem;
+            animation: animate infinite 9s;
+        }
+
+        @keyframes animate {
+            0% {
+                content: "I am a Programmer";
+            }
+
+            20% {
+                content: "I am a Web developer";
+            }
+
+            40% {
+                content: "I am a Coder";
+            }
+        }
